@@ -1,0 +1,20 @@
+#include<stdio.h>
+void swapx(int *x,int*y){
+int t;
+    t=*x;
+    *x=*y;
+    *y=t;
+ printf("inside swapx: x=%d y=%d\n",*x,*y);
+}  
+int main(){ 
+    int a=10,b=20;
+swapx(&a,&b);
+    printf("inside main:a=%d b=%d",a,b);
+  return 0;
+}
+
+
+output:
+
+inside swapx: x=20 y=10
+inside main:a=20 b=10 
