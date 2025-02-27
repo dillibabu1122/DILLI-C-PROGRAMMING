@@ -1,0 +1,20 @@
+#include<stdio.h>
+long int multiplynumbers(int n);
+int main(){
+    int n;
+ printf("enter a positive number:");
+    scanf("%d",&n);
+ printf("factorial of %d=%id",n,multiplynumbers(n));
+    return 0;
+} 
+long int multiplynumbers(int n){
+if(n>=1)
+    return n*multiplynumbers(n-1);
+  else
+    return 1;
+} 
+
+output:
+
+enter a positive number:5
+factorial of 5=120d
